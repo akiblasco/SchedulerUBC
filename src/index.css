@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  body {
+    @apply bg-gray-100 text-gray-900 antialiased min-h-screen;
+  }
+}
+
+@layer components {
+  .form-input {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm 
+           focus:border-blue-500 focus:ring-blue-500 
+           disabled:bg-gray-50 disabled:text-gray-500;
+  }
+}
